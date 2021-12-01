@@ -1,0 +1,60 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <nav class="nav flex-column">
+        <div class="nav-item">
+            <h2>Filtrar por: </h2>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar Curso" aria-label="Search">
+                <button class="btn btn-outline-blue" type="submit">Filtrar</button>
+            </form>
+        </div> 
+        <div class="nav-item">
+            <h2>Temática</h2>
+            <form>
+                <ul>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="programacion">
+                        <label class="form-check-label" for="programacion">Progamación</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="diseño">
+                        <label class="form-check-label" for="diseño">Diseño</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="human">
+                        <label class="form-check-label" for="human">Humanidades</label>   
+                    </li>
+                </ul>  
+            </form>
+        </div>
+        <div class="nav-item">
+            <h2>Duración</h2>
+            <form>
+                <ul>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="modulo2">
+                        <label class="form-check-label" for="modulo2">2 Módulos</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="modulo3">
+                        <label class="form-check-label" for="modulo3">3 Módulos</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="modulo4">
+                        <label class="form-check-label" for="modulo4">4 Módulos</label>   
+                    </li>
+                </ul>  
+            </form>
+        </div>
+    </nav>
+
+    <div id="cursos">
+        <h1>Cursos Disponibles</h1>
+        <ul id="listaCursos">
+            <li *ngFor="let curso of ListaCursos">
+                <img [routerLink]="['/modulo',curso.id]" routerLinkActive="router-link-active"  src="../../../assets/1.jpg" alt="imagen">
+                <p [routerLink]="['/modulo',curso.id]" routerLinkActive="router-link-active">{{curso.nombre}}</p>
+            </li>
+        </ul>
+    </div>
+</div>

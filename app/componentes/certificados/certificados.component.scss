@@ -1,0 +1,29 @@
+.container-fluid{
+    width: 80%;
+}
+ul li {
+    list-style: none;
+}
+#listacursosTerminados{
+    position: relative;
+    display: flex;
+}
+
+#listacursosTerminados li{
+    margin-left:8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+
+#listaotrosCursos{
+    position: relative;
+    display: flex;
+}
+
+#listaotrosCursos li{
+    margin-left:8%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}

@@ -1,0 +1,37 @@
+.container-fluid{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#izquierda{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border-right:ridge;
+    padding-right: 2%;
+    padding-bottom: 9%;
+    width: 75%;
+}
+#cursosContinuar{
+    padding-bottom: 20%;
+    margin-top:5%;
+    border-bottom:ridge;
+    
+}
+#listacurso{
+    display: flex;
+    position: relative;
+    list-style: none;
+    margin-bottom: 8%;
+    margin-top: 5%;
+}
+img{
+    width: 80%;
+}
+.btn-dark{
+    margin-left: 40%;
+}

@@ -1,0 +1,75 @@
+<div class="container-fluid" >
+    
+<h1>Registrarse</h1>
+
+<form [formGroup]="Agregar" (ngSubmit)="Insetar()">
+    <ul>
+        <li>
+            <label for="nombre">Nombres</label>
+            <input class="form-control" type="text" [(ngModel)]="nombre" formControlName="nombre">
+            <div *ngIf="Agregar.controls['nombre'].invalid && (Agregar.controls['nombre'].dirty || Agregar.controls['nombre'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+        <li>
+            <label for="apellido">Apellidos</label>
+            <input class="form-control" type="text" [(ngModel)]="apellido" formControlName="apellido" >
+            <div *ngIf="Agregar.controls['apellido'].invalid && (Agregar.controls['apellido'].dirty || Agregar.controls['apellido'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+
+        <li>
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" [(ngModel)]="mail" formControlName="mail">
+            <div *ngIf="Agregar.controls['mail'].invalid && (Agregar.controls['mail'].dirty || Agregar.controls['mail'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+        <li>
+            <label for="pais">País</label>
+            <input class="form-control" type="text" [(ngModel)]="pais" formControlName="pais"><!--creo que es tipo select pero no queda claro-->
+            <div *ngIf="Agregar.controls['pais'].invalid && (Agregar.controls['pais'].dirty || Agregar.controls['pais'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+        <li>
+            <label for="passw">Contraseña</label>
+            <input type="password" class="form-control" id=passw placeholder="Contraseña" [(ngModel)]="password" formControlName="password">
+            <div *ngIf="Agregar.controls['password'].invalid && (Agregar.controls['password'].dirty || Agregar.controls['password'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+        <li>
+            <label for="ciudad">Ciudad</label>
+            <input class="form-control" type="text" [(ngModel)]="ciudad" formControlName="ciudad">
+            <div *ngIf="Agregar.controls['ciudad'].invalid && (Agregar.controls['ciudad'].dirty || Agregar.controls['ciudad'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+        <li>
+            <label for="documento">Documento</label>
+            <input class="form-control" type="text" [(ngModel)]="rut" formControlName="rut" >
+            <div *ngIf="Agregar.controls['rut'].invalid && (Agregar.controls['rut'].dirty || Agregar.controls['rut'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+        <li>
+            <label for="telefono">Teléfono</label>
+            <input class="form-control" type="text" [(ngModel)]="telefono" formControlName="telefono">
+            <div *ngIf="Agregar.controls['telefono'].invalid && (Agregar.controls['telefono'].dirty || Agregar.controls['telefono'].touched)"  class="alert alert-danger"  > 
+                Campo requerido
+            </div>
+        </li>
+        <li>
+            <p>SUBIR PDF 'FALTA UN RECUADRO-ACEPTE DOCUMENTOS'</p>
+            <P>	CAPTCHA</P>
+        </li>
+        <li>
+            <button type="submit" class="btn btn-primary" [disabled]="!Agregar.valid" >Registrarse</button>
+            <button (click)="Iniciar()" class="btn btn-primary" >Iniciar</button>
+        </li>
+    </ul>
+</form>
+
+</div>

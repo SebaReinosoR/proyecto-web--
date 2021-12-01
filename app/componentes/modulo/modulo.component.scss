@@ -1,0 +1,11 @@
+.container-fluid{
+    width: 80%;
+}
+#listaModulos li{
+    display: flex;
+    position: relative;
+    margin-top: 5%;
+}
+#listaModulos li div{
+    margin:2%;
+}

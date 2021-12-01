@@ -1,0 +1,42 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div id="cursosTerminados">
+        <h1>Cursos Terminados</h1>
+        <ul id=listacursosTerminados>    
+            <li>   
+                
+               <img src="../../../assets/1.jpg" alt="">
+               <p>Curso de programacion</p>
+               <button class="btn btn-primary" type="submit" [routerLink]="['/certificado']" routerLinkActive="router-link-active" >Certificado</button>
+            </li>
+            <li>   
+                <img src="../../../assets/2.png" alt="">
+                <p>Curso de programacion</p>
+                <button class="btn btn-primary" type="submit" [routerLink]="['/certificado']" routerLinkActive="router-link-active" >Certificado</button>
+            </li>
+            <li>   
+                <p></p>
+            </li>
+
+        </ul>
+
+    </div>
+   
+    <div id="otrosCursos">
+        <h1>Otros cursos</h1>
+        <ul id="listaotrosCursos">
+            <li>
+                <img src="../../../assets/2.png" alt="">
+                <p>Curso de programacion</p>
+                <p>3 modulos</p>
+                <h2 [routerLink]="['/cursos']" routerLinkActive="router-link-active" >Cursos</h2>
+            </li>
+            <li>
+                otro curso
+            </li>
+
+        </ul>
+    </div>
+    
+
+</div>

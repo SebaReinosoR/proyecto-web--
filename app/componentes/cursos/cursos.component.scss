@@ -1,0 +1,44 @@
+.container-fluid{
+    position: relative;
+    display: flex;
+    width: 80%;
+}
+#cursos{
+    margin-left: 5%;
+}
+nav{
+    border-left: ridge;
+    border-right: ridge;    
+    border-color: rgb(214, 204, 204);
+    padding:2%;
+
+}
+form ul li{
+    list-style: none;
+    margin: 0.5em;
+}
+#listaCursos li{
+    list-style: none;
+}
+#listaCursos{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav-item{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+#listaCursos{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#listaCursos li img{
+    width: 80%;
+    margin-top: 10%;
+}

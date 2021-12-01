@@ -1,0 +1,67 @@
+.container-fluid{
+    width: 80%;
+    display: flex;
+}
+
+#izquierda{
+    width: 120%;
+    border-right:ridge;
+    padding-right: 3%;
+
+}
+#img{
+    border-bottom:ridge;
+    padding-bottom: 8%;
+}
+
+#comentarios{
+    width: 50%;
+    font-size:0.9rem ;
+}
+#cursosRelacion{
+   margin-top: 5%;
+}
+#cursosRelacion ul{
+    display: flex;
+    list-style: none;
+    
+}
+#cursosRelacion ul li img{
+    width: 85%;
+}
+
+#derecha{
+    width: 60%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+#derecha button{
+    margin: 3%
+}
+
+#comentarios{
+    border:ridge;
+    width: 80%;
+    border-radius: 30px;
+   
+}
+input{
+    width: 80%;    
+}
+#comentarios ul{
+    list-style:none;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#comentarios ul li{
+    border-bottom:ridge;
+    border-bottom-width:2px ;
+    position: relative;
+}
+#perfil{
+    display: flex;
+
+}
+#perfil p{
+    margin:3%
+}

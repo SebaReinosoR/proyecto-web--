@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container-fluid">
+    <div id="izquierda">
+        <ul>
+            <li id="cursosContinuar">
+                <h2>Continúa con tus cursos</h2>
+
+                <ul id="listacurso">
+                    <li> <img src="../../../assets/2.png" alt=""> </li>
+                    <li> <img src="../../../assets/2.png" alt=""> </li>
+                    <li> <img src="../../../assets/2.png" alt=""> </li>
+                    
+                </ul>
+                
+                <button class= "btn btn-dark" [routerLink]="['/cursos']" routerLinkActive="router-link-active" >Ver más cursos</button>
+            </li>
+            <li id ="ofertasLaborales">
+
+                <h3>Ofertas laborales destacadas</h3>
+
+                <p>MUESTRA DE EMPLEOS DESTACADOS</p>
+
+            </li>
+        </ul>
+
+    </div> 
+    
+
+    <div id="derecha">
+        <P>CUANTO TIEMPO ESTUDIO EN LA SEMANA</P>
+
+        <P>CANTIDAD DE CURSUS COMPLETOS</P>
+
+        <button class= "btn btn-white" [routerLink]="['/certificados']" routerLinkActive="router-link-active" >Ver mis certificados</button>
+
+        <button class= "btn btn-white" [routerLink]="['/empleo']" routerLinkActive="router-link-active" >Ofertas laborales</button>
+    </div>    
+</div>

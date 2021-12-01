@@ -1,0 +1,81 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <nav class="nav flex-column">
+        <div class="nav-item">
+            <h2>Filtrar por: </h2>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar Ofertas Laborales">
+                <button class="btn btn-outline-blue" type="submit">Filtrar</button>
+            </form>
+        </div> 
+        <div class="nav-item">
+            <h2>Ubicación</h2>
+            <form>
+                <ul>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Nacional</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Internacional</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">teletrabajo</label>   
+                    </li>
+                </ul>  
+            </form>
+        </div>
+        <div class="nav-item">
+            <h2>Joranada</h2>
+            <form>
+                <ul>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Tiempo completo</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Tiempo parcial</label>   
+                    </li>
+                    <li>
+                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                        <label class="form-check-label" for="defaultCheck1">Por horas </label>   
+                    </li>
+                </ul>  
+            </form>
+        </div>
+        <div class="nav-item">
+            <h2>Salario</h2>
+            <form >
+                <input type="range" id="range" list="tickmarks">
+                <datalist id="tickmarks">
+                    <option value="0" label="0"></option>
+                    <option value="25"></option>
+                    <option value="50" label="2500"></option>
+                    <option value="75"></option>
+                    <option value="100" label="5000"></option>
+                </datalist>
+            </form>
+        </div>
+    </nav>
+
+    <div id="ofertas">
+        <h1>Ofertas Laborales</h1>
+
+        <ul id="listaOfertas">
+            <li *ngFor="let oferta of ListaOfertas">
+                <h6>{{oferta.nombre}}</h6>
+                <h6>{{oferta.ubicacion}}</h6>
+                <h6>{{oferta.empresa}}</h6>
+                <img src="../../../assets/logo.png" alt="">
+            </li>
+        </ul>
+    </div>
+    <div>
+        <a href="" class=""> Agregar Oferta</a> 
+    </div>
+</div>
+

@@ -1,0 +1,28 @@
+ul li{
+    list-style-type: none;
+    
+  }
+#boton{
+  width: 100%;
+  max-width: 10%;
+}
+#barra{
+  width: 100%;
+  max-width: 5%;
+}
+ul{
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  h2{
+    font-size:medium ; 
+    margin: 2rem; 
+  }
+ 
+.container-fluid{
+    background-color: rgb(92, 92, 153);   
+}

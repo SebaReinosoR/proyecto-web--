@@ -1,0 +1,17 @@
+<app-header></app-header>
+
+<div class="container-fluid">
+    <h1>Contenido de Este Curso</h1>
+
+    <ul id=listaModulos>
+        <li *ngFor="let modulo of ListaModulos">
+            <img [routerLink]="['/clase',modulo.id]" routerLinkActive="router-link-active"  src="../../../assets/2.png" alt="">
+            <div>
+                <h3>{{modulo.nombre}}</h3>
+                <P>{{modulo.descripcion}}</P>
+            </div>
+            
+        </li>
+    </ul>
+
+</div>
